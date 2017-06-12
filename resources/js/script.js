@@ -12,7 +12,8 @@ $(document).ready(function() {
       // need randomizing here
       for (i=0; i<items.length; i++) {
         console.log(items[i].key);
-        html = "hey there";
+        html = "<blockquote><i class='fa fa-quote-right' aria-hidden='true'></i><p>" + items[i].key;
+        html += "</p><footer class='blockquote-footer'>" + items[i].value + "</blockquote>";
       }
       quoteBin.html(html);
       });
