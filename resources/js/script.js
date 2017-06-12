@@ -4,7 +4,8 @@ $(document).ready(function() {
     var quoteBin = $("#quote-bin");
     var html = "";
     console.log(quoteBin.selector.length);
-    $.getJSON("http://localhost:3000/js/quotes.json", function (jsonResponse) {
+    //$.getJSON("http://localhost:3000/js/quotes.json", function (jsonResponse) {
+      $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", function (jsonResponse) {
       console.log(jsonResponse);
       // var items = jsonResponse.items.map(function (item) {
       //   return item.key + ': ' + item.value;
