@@ -1,12 +1,13 @@
-[
-  {
-    "quote": "Some quotes are more pithy than others.",
-    "source": "Anonymous",
-    "key": "value"
-  },
-  {
-    "quote": "I am not a crook.",
-    "source": "Richard Nixon",
-    "key": "value"
-  }
-]
+{
+  "items": [
+    {
+      "key": "Some quotes are more pithy than others.",
+      "value": "Anonymous"
+    },
+    {
+      "key": "I am not a crook.",
+      "value": "Richard Nixon"
+    }
+  ]
+}
+  
