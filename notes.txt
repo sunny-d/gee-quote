@@ -1,3 +1,0 @@
-interesting example - uses a codepen.io link for a json file
-https://codepen.io/loomernescent/pen/LRGRaB.js
-

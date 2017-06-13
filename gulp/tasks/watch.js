@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
 watch = require('gulp-watch'),
 browserSync = require('browser-sync').create();
-
+var reload = browserSync.reload();
 gulp.task('watch', function() {
 	browserSync.init({
 		notify: false,
@@ -9,15 +9,5 @@ gulp.task('watch', function() {
 			baseDir: "resources"
 		}
 	});
-	watch('index.html', function() {
-		browserSync.reload();
+	watch('*.html').on("change", reload);
 	});
-	// watch('./resources/styles/**/*.css', function() {
-	// 	gulp.start('cssInject');
-	// });
-});
-
-// gulp.task('cssInject', ['styles'], function() {
-// 	return gulp.src('./app/temp/styles/styles.css')
-// 		.pipe(browserSync.stream());
-// });

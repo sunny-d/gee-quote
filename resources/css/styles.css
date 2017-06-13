@@ -11,8 +11,20 @@ body {
   font-family: 'Raleway', sans-serif;
   padding-top: 20%;
 }
+
+#quote-bin {
+  color: brown;
+}
+.btn-overlay {
+  margin-bottom: -18px;
+  margin-left: 20px;
+}
+
+.btn-overlay-bottom {
+  margin-top: -18px;
+  margin-right: 20px;
+}
+
 .btn-get {
   background-color: burlywood;
-  /*height: 50px;
-  width: 25%;*/
 }
