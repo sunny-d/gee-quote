@@ -2,32 +2,25 @@ $(document).ready(function() {
   $("#get-quote").on("click", function () {
     console.log("script.js");
     var quoteBin = $("#quote-bin");
+    //var authorBin = $("#author-bin");
     var html = "";
+    var items = [];
     console.log(quoteBin.selector.length);
-    //$.getJSON("http://localhost:3000/js/quotes.json", function (jsonResponse) {
       $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", function (jsonResponse) {
       console.log(jsonResponse);
-      // var items = jsonResponse.items.map(function (item) {
-      //   return item.key + ': ' + item.value;
-      var items = jsonResponse.items;
-      // need randomizing here
-      for (i=0; i<items.length; i++) {
-        console.log(items[i].key);
-        html = "<blockquote><i class='fa fa-quote-right' aria-hidden='true'></i><p>" + items[i].key;
-        html += "</p><footer class='blockquote-footer'>" + items[i].value + "</blockquote>";
-      }
+      console.log(jsonResponse[0].ID);
+      items = jsonResponse;
+      html = "<blockquote><i class='fa fa-quote-right' aria-hidden='true'></i><p>" + items[0].content;
+      html += "</p><footer class='blockquote-footer'>";
+      html += items[0].title;
+      html += "</blockquote>";
+      //quoteBin = jsonResponse[0].content;
+      //authorBin = jsonResponse[0].title;
+      //quoteBin.html(html);
+      //jsonResponse.end;
       quoteBin.html(html);
       });
-      quoteBin.empty();
-      // if (items.length) {
-      //   // var content = "<quote>" + items.join("</quote>");
-      //   console.log(items);
-      //   html = "<p>" + items[0].item.key + " -- " + items[0].item.value + "</p>";
-      // }
-      
+      quoteBin.empty();      
     });
-//       $.getJSON("http://localhost:3000/js/quotes.json", function (json) {
-//       console.log(json);
-//       var html = "";
-//       });
+    $("#get-quote").click();
   });

@@ -1,4 +1,18 @@
 body {
+  /*credit - fontophilic*/
+  background: url('https://res.cloudinary.com/batmanslap/image/upload/v1496022459/body_ybbdg5.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: 'Raleway', sans-serif;
-  padding: 20%;
+  padding-top: 20%;
+}
+.btn-get {
+  background-color: burlywood;
+  /*height: 50px;
+  width: 25%;*/
 }
