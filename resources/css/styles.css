@@ -1,30 +1,21 @@
 body {
-  /*credit - fontophilic*/
-  background: url('https://res.cloudinary.com/batmanslap/image/upload/v1496022459/body_ybbdg5.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   font-family: 'Raleway', sans-serif;
   padding-top: 20%;
+}
+
+.row-icons {
+  text-align: right;
+  padding-right: 20px;
+  /*margin-top: -64px;*/
 }
 
 #quote-bin {
   color: brown;
 }
-.btn-overlay {
-  margin-bottom: -18px;
-  margin-left: 20px;
-}
 
-.btn-overlay-bottom {
-  margin-top: -18px;
-  margin-right: 20px;
+#get-quote  {
+  margin-top: -64px;
 }
-
-.btn-get {
-  background-color: burlywood;
+#tweet-quote {
+  margin-top: -64px;
 }
