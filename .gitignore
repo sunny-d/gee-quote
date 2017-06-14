@@ -58,8 +58,11 @@ typings/
 .env
 
 # gulp
-gulp
-gulpfile.js
+.gulp
+.gulpfile.js
 
 # package.json
-package.json
+.package.json
+
+# DS Store
+.DS_Store
