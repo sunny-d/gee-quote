@@ -1,6 +1,3 @@
-# Created by https://www.gitignore.io/api/node
-
-### Node ###
 # Logs
 logs
 *.log
@@ -60,5 +57,12 @@ typings/
 # dotenv environment variables file
 .env
 
+# gulp
+gulp/
+gulpfile.js
 
-# End of https://www.gitignore.io/api/node
+# package.json
+package.json
+
+# DS Store
+.DS_Store
